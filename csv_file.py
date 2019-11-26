@@ -22,4 +22,4 @@ def toJson(data):
         jsonFile.write(json.dumps(data,indent=4))
 
 
-toJson(read_csv_file('dict.csv'))
+#toJson(read_csv_file('dict.csv'))

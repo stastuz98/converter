@@ -1,18 +1,19 @@
 import json
 import csv
 
-FILE_NAME1 = 'csvTOjson.json' 
-FILE_NAME2 = 'csv_file.csv'
+FILE_INPUT = 'TOjson.json' 
+FILE_OUTPUT = 'csv_fi.csv'
 
 #jsonTOcsv
 
+
 def reader_json():
-    with open(FILE_NAME1, 'r') as reader:
+    with open(FILE_INPUT, 'r') as reader:
         my_dictionary = reader.read()
     return my_dictionary
     
 def writer_csv(my_list):
-    with open(FILE_NAME2, 'w', newline='') as file:
+    with open(FILE_OUTPUT, 'w', newline='') as file:
         colums = colums_for_fieldnames(my_list)
         writer = csv.DictWriter(file, fieldnames=colums)
         writer.writeheader()
@@ -24,6 +25,5 @@ def colums_for_fieldnames(my_list):
         name_colums.append(key)
     return name_colums
 
-my_list = (reader_json())
-print(my_list)
-#writer_csv(my_list)
+my_list = json.loads(reader_json())
+writer_csv(my_list)
