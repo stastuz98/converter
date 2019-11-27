@@ -13,4 +13,4 @@ def lenMore1():
     elif re.search(r'.csv', args.input):
         csv_file.toJson(csv_file.read_csv_file(args.input), args.output)
     else:
-        print('Check the correctness of the entered data')
+        print('Check the correctness of the entered data!')
