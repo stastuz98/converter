@@ -21,5 +21,3 @@ def colums_for_fieldnames(my_list):
     for key in my_list[0]:
         name_colums.append(key)
     return name_colums
-
-

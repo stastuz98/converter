@@ -1,5 +1,3 @@
-string_from_terminal.py
 *.csv
 *.json
-input
-train.py
+

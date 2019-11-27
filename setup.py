@@ -1,6 +1,6 @@
 import sys
-import ifLenMore1
-import ifLenEquals1
+from Check import ifLenMore1
+from Check import ifLenEquals1
 
 if len(sys.argv)>1:
     ifLenMore1.lenMore1()
