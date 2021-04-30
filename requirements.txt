@@ -35,6 +35,6 @@ pyxdg==0.25
 requests==2.22.0
 setproctitle==1.1.10
 six==1.11.0
-urllib3==1.25.7
+urllib3==1.25.8
 Werkzeug==0.16.0
 yarg==0.1.9
